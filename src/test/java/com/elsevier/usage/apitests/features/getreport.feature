@@ -8,8 +8,8 @@ Feature: Perform functional testing around the actual contents of the reports th
     Then I compare the actual output sent by service with expected output file present in expected-content directory "src/test/expected-content/<scenarioName>".
     Examples:
       | report_id | scenarioName       | customer_id | requestor_id | begin_date | end_date   | platform | report_format |
-      | dr_d1     | dr_d1_ev_json.json |C000036298 |counter     |2016-01-01|2016-12-31|ev      |json         |
-      | dr_d1     | dr_d1_sc_json.json |C000036298 |counter     |2016-01-01|2016-12-31|sc      |json         |
-      | pr_p1     | pr_p1_sc_json.json |C000036298 |counter     |2016-01-01|2016-12-31|sc      |json         |
-      | pr_p1     | pr_p1_ev_json.json |C000036298 |counter     |2016-01-01|2016-12-31|ev      |json         |
+      | dr_d1     | dr_d1_ev_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | ev       | json          |
+      | dr_d1     | dr_d1_sc_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | sc       | json          |
+      | pr_p1     | pr_p1_sc_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | sc       | json          |
+      | pr_p1     | pr_p1_ev_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | ev       | json          |
 
