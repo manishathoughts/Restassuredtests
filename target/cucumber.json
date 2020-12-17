@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-17T00:08:28.509Z",
+        "start_timestamp": "2020-12-17T12:58:38.343Z",
         "line": 11,
         "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json",
         "description": "",
@@ -13,19 +13,19 @@
         "steps": [
           {
             "result": {
-              "duration": 370000000,
+              "duration": 281000000,
               "status": "passed"
             },
             "line": 5,
             "name": "I select the environment on which the execution is to be processed",
             "match": {
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.selectEnvironment()"
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 156000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "line": 6,
@@ -57,36 +57,33 @@
                   "offset": 116
                 }
               ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException: Bad response code: 500\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.isExpectedResponseCode(MyStepdefs.java:62)\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:51)\n\tat ✽.I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)\n",
-              "duration": 1621000000,
-              "status": "failed"
+              "duration": 1793000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"",
+            "name": "I provide the service url dr_d1 and wait until response is 200",
             "match": {
               "arguments": [
                 {
                   "val": "dr_d1",
                   "offset": 26
-                },
-                {
-                  "val": "retry_limit",
-                  "offset": 69
                 }
               ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(java.lang.String,java.lang.String)"
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError: Report_Header.Customer_ID\nExpected: C000036298\n     got: S000000004\n ; Report_Header.Institution_Name\nExpected: University of Connecticut\n     got: COUPERIN Consortium\n ; Report_Items[Database\u003dScopus].Performance[0] Could not find match for element {\"Instance\":[{\"Metric_Type\":\"Searches_Regular\",\"Count\":8457}],\"Period\":{\"Begin_Date\":\"2016-01-01\",\"End_Date\":\"2016-01-31\"}}\n\tat org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)\n\tat org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.compareJsonFiles(ReportDefinition.java:68)\n\tat ✽.I compare the actual output sent by service with expected output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:8)\n",
+              "duration": 27000000,
+              "status": "failed"
             },
             "line": 8,
             "name": "I compare the actual output sent by service with expected output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".",
@@ -97,113 +94,7 @@
                   "offset": 108
                 }
               ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.compareJsonFiles(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@integration-tests"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-17T00:08:30.732Z",
-        "line": 12,
-        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json",
-        "description": "",
-        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I select the environment on which the execution is to be processed",
-            "match": {
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.selectEnvironment()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I submit a get request with the required request parameters such as s000000002,counter,2016-01-01,2016-12-31,sc and json",
-            "match": {
-              "arguments": [
-                {
-                  "val": "s000000002",
-                  "offset": 68
-                },
-                {
-                  "val": "counter",
-                  "offset": 79
-                },
-                {
-                  "val": "2016-01-01",
-                  "offset": 87
-                },
-                {
-                  "val": "2016-12-31",
-                  "offset": 98
-                },
-                {
-                  "val": "sc",
-                  "offset": 109
-                },
-                {
-                  "val": "json",
-                  "offset": 116
-                }
-              ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.awaitility.core.ConditionTimeoutException: Condition with lambda expression in com.elsevier.usage.apitests.stepdefinitions.MyStepdefs was not fulfilled within 30 seconds.\n\tat org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:79)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:27)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:53)\n\tat ✽.I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)\n",
-              "duration": 31063000000,
-              "status": "failed"
-            },
-            "line": 7,
-            "name": "I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dr_d1",
-                  "offset": 26
-                },
-                {
-                  "val": "retry_limit",
-                  "offset": 69
-                }
-              ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "I compare the actual output sent by service with expected output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"src/test/expected-content/dr_d1_sc_json.json\"",
-                  "offset": 108
-                }
-              ],
-              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.compareJsonFiles(java.lang.String)"
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.compareJsonFiles(java.lang.String)"
             },
             "keyword": "Then "
           }

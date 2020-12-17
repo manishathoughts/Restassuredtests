@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="33.429">
-<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json" time="2.205">
-<failure message="Bad response code: 500" type="com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException"><![CDATA[Given I select the environment on which the execution is to be processed....passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.369">
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json" time="2.265">
+<failure message="Report_Header.Customer_ID&#10;Expected: C000036298&#10;     got: S000000004&#10; ; Report_Header.Institution_Name&#10;Expected: University of Connecticut&#10;     got: COUPERIN Consortium&#10; ; Report_Items[Database=Scopus].Performance[0] Could not find match for element {&quot;Instance&quot;:[{&quot;Metric_Type&quot;:&quot;Searches_Regular&quot;,&quot;Count&quot;:8457}],&quot;Period&quot;:{&quot;Begin_Date&quot;:&quot;2016-01-01&quot;,&quot;End_Date&quot;:&quot;2016-01-31&quot;}}" type="java.lang.AssertionError"><![CDATA[Given I select the environment on which the execution is to be processed....passed
 And I submit a get request with the required request parameters such as s000000004,counter,2016-01-01,2016-12-31,sc and json.passed
-And I provide the service url dr_d1 and wait until response is 200 with "retry_limit".failed
-Then I compare the actual output sent by service with expected output file present in expected-content directory "src/test/expected-content/dr_d1_sc_json.json"..skipped
+And I provide the service url dr_d1 and wait until response is 200..........passed
+Then I compare the actual output sent by service with expected output file present in expected-content directory "src/test/expected-content/dr_d1_sc_json.json"..failed
 
 StackTrace:
-com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException: Bad response code: 500
-	at com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.isExpectedResponseCode(MyStepdefs.java:62)
-	at com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:51)
-	at ✽.I provide the service url dr_d1 and wait until response is 200 with "retry_limit"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)
-]]></failure>
-</testcase>
-<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json 2" time="31.069">
-<failure message="Condition with lambda expression in com.elsevier.usage.apitests.stepdefinitions.MyStepdefs was not fulfilled within 30 seconds." type="org.awaitility.core.ConditionTimeoutException"><![CDATA[Given I select the environment on which the execution is to be processed....passed
-And I submit a get request with the required request parameters such as s000000002,counter,2016-01-01,2016-12-31,sc and json.passed
-And I provide the service url dr_d1 and wait until response is 200 with "retry_limit".failed
-Then I compare the actual output sent by service with expected output file present in expected-content directory "src/test/expected-content/dr_d1_sc_json.json"..skipped
-
-StackTrace:
-org.awaitility.core.ConditionTimeoutException: Condition with lambda expression in com.elsevier.usage.apitests.stepdefinitions.MyStepdefs was not fulfilled within 30 seconds.
-	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
-	at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
-	at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
-	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)
-	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)
-	at com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:53)
-	at ✽.I provide the service url dr_d1 and wait until response is 200 with "retry_limit"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)
+java.lang.AssertionError: Report_Header.Customer_ID
+Expected: C000036298
+     got: S000000004
+ ; Report_Header.Institution_Name
+Expected: University of Connecticut
+     got: COUPERIN Consortium
+ ; Report_Items[Database=Scopus].Performance[0] Could not find match for element {"Instance":[{"Metric_Type":"Searches_Regular","Count":8457}],"Period":{"Begin_Date":"2016-01-01","End_Date":"2016-01-31"}}
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.compareJsonFiles(ReportDefinition.java:68)
+	at ✽.I compare the actual output sent by service with expected output file present in expected-content directory "src/test/expected-content/dr_d1_sc_json.json".(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:8)
 ]]></failure>
 </testcase>
 </testsuite>
