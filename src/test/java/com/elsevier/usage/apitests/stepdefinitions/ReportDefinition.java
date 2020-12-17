@@ -1,4 +1,4 @@
-package com.elsevier.usage.apitests.stepdefinitions;
+/*package com.elsevier.usage.apitests.stepdefinitions;
 
 
 import com.elsevier.usage.apitests.utils.CounterDataServiceUtils;
@@ -25,8 +25,6 @@ public class ReportDefinition {
 
     PropertyResolver pr = new PropertyResolver();
     RequestSpecification request;
-    Map<>
-
 
     @Given("^I select the environment on which the execution is to be processed$")
     public void i_select_the_environment_on_which_the_execution_is_to_be_processed() throws IOException {
@@ -34,7 +32,7 @@ public class ReportDefinition {
         RestAssured.baseURI = CounterDataServiceUtils.getProps().getProperty("base.url");
     }
 
-    @When("^I provide all the request parameter such as (.+),(.+),(.+),(.+),(.+) and (.+)$")
+    @And("^I submit a get request with the required request parameters such as (.+),(.+),(.+),(.+),(.+) and (.+)$")
     public void i_provide_all_the_request_parameter_such_as_and(String customerid, String requestorid, String begindate, String enddate, String platform, String reportformat) throws Throwable {
          request=given().log().all().queryParam("platform", platform)
                 .queryParam("report_format", reportformat)
@@ -42,13 +40,15 @@ public class ReportDefinition {
                 .queryParam("end_date", enddate)
                 .queryParam("customer_id", customerid)
                 .queryParam("requestor_id", requestorid);
-    }
+    }*//*
 
 
 
 
 
 
+*/
+/*
     @And("^I submit a get request for the (.+) and wait till the response code is 200 and I compare the actual output file created in application with expected output file present in expected-content directory \"([^\"]*)\".$")
     public Response i_submit_a_get_request(String reportid, String strArg1) throws Throwable {
         Response response=request.when().get("/reports/"+reportid+"");
@@ -90,10 +90,13 @@ public class ReportDefinition {
     }
 
 
-   /* @And("I submit a get request for the <report_id> and wait till the response code is {int} and I compare the actual output file created in application with expected output file present in expected-content directory {string}.")
+ @And("I submit a get request for the <report_id> and wait till the response code is {int} and I compare the actual output file created in application with expected output file present in expected-content directory {string}.")
     public void iSubmitAGetRequestForTheReport_idAndWaitTillTheResponseCodeIsAndICompareTheActualOutputFileCreatedInApplicationWithExpectedOutputFilePresentInExpectedContentDirectory(int arg0, String arg1) {
-    }*/
+    }*//*
+
+
 }
 
 
 
+*/

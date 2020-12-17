@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class PropertyResolver {
     public static final String ENV_PROP_NAME = "environment";
-    public static final String ENV_NONPROD = "cert";
+    public static final String ENV_NONPROD = "nonprod";
     private static final String environment;
     public static final String RETRY_PROP_NAME="maximum";
     private static final String maximum;

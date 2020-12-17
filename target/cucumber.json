@@ -1,0 +1,225 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-17T00:08:28.509Z",
+        "line": 11,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 370000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.selectEnvironment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I submit a get request with the required request parameters such as s000000004,counter,2016-01-01,2016-12-31,sc and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "s000000004",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException: Bad response code: 500\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.isExpectedResponseCode(MyStepdefs.java:62)\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:51)\n\tat ✽.I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)\n",
+              "duration": 1621000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                },
+                {
+                  "val": "retry_limit",
+                  "offset": 69
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I compare the actual output sent by service with expected output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_sc_json.json\"",
+                  "offset": 108
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.compareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-17T00:08:30.732Z",
+        "line": 12,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.selectEnvironment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I submit a get request with the required request parameters such as s000000002,counter,2016-01-01,2016-12-31,sc and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "s000000002",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.awaitility.core.ConditionTimeoutException: Condition with lambda expression in com.elsevier.usage.apitests.stepdefinitions.MyStepdefs was not fulfilled within 30 seconds.\n\tat org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:79)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:27)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)\n\tat com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(MyStepdefs.java:53)\n\tat ✽.I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/getreport.feature:7)\n",
+              "duration": 31063000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I provide the service url dr_d1 and wait until response is 200 with \"retry_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                },
+                {
+                  "val": "retry_limit",
+                  "offset": 69
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.serviceURLandLimit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I compare the actual output sent by service with expected output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_sc_json.json\"",
+                  "offset": 108
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.MyStepdefs.compareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      }
+    ],
+    "name": "Perform functional testing around the actual contents of the reports that the service generates.",
+    "description": "",
+    "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/elsevier/usage/apitests/features/getreport.feature",
+    "tags": []
+  }
+]

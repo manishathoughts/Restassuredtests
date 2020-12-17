@@ -11,8 +11,10 @@ import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.skyscreamer.jsonassert.comparator.CustomComparator;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
+import static org.awaitility.Awaitility.await;
 
 public class GetDRD1ReportTest {
 
@@ -49,8 +51,9 @@ public class GetDRD1ReportTest {
                 System.out.println("status code is 200 so returning back the response.\n" + response.asString());
                 return response;
             } else if (response.getStatusCode() == 202) {
-                System.out.println("status code: " + response.getStatusCode() + " so sleeping for 60 sec.\n" + response.asString());
-                Thread.sleep(60000);
+                System.out.println("status code: " + response.getStatusCode() + " so sleeping for 10 sec.\n" + response.asString());
+
+                await().atMost(10, TimeUnit.SECONDS);
                 return submitReportRequest();
             }
             else{

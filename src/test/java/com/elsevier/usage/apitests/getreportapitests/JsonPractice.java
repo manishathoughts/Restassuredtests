@@ -36,4 +36,13 @@ public  void leniantAndStrictcheck() throws JSONException {
             System.out.println("------"+count);
         }
     }
+
+   /* @Test
+    public void updatesCustomerStatus() {
+        // Publish an asynchronous message to a broker (e.g. RabbitMQ):
+
+        // Awaitility lets you wait until the asynchronous operation completes:
+        await().atMost(5, SECONDS).until(customerStatusIsUpdated());
+    ...
+    }*/
 }
