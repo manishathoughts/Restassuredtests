@@ -12,4 +12,5 @@ Feature: Perform functional testing around the actual contents of the reports th
       | dr_d1     | dr_d1_sc_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | sc       | json          |
       | pr_p1     | pr_p1_sc_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | sc       | json          |
       | pr_p1     | pr_p1_ev_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | ev       | json          |
+      | pr_p1     | pr_p1_sd_json.json | C000036298  | counter      | 2016-01-01 | 2016-12-31 | sd       | json          |
 
