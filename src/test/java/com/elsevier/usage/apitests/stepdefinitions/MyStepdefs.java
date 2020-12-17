@@ -1,5 +1,4 @@
 package com.elsevier.usage.apitests.stepdefinitions;
-
 import com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException;
 import com.elsevier.usage.apitests.utils.CounterDataServiceUtils;
 import com.elsevier.usage.apitests.utils.JsonReaderUtils;
@@ -14,13 +13,10 @@ import org.skyscreamer.jsonassert.Customization;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.skyscreamer.jsonassert.comparator.CustomComparator;
-
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
-
 import static io.restassured.RestAssured.given;
-import static org.awaitility.Awaitility.await;
 import static org.awaitility.Awaitility.with;
 
 public class MyStepdefs {
