@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="0" name="com.elsevier.usage.apitests.cucumberoptions.TestRunner" time="0.265" errors="15" skipped="0">
+  <properties>
+    <property name="idea.version" value="2020.2.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.241-b07"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/sistum/usage-projects/restassuredpractice"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/sistum/usage-projects/restassuredpractice"/>
+    <property name="java.runtime.version" value="1.8.0_241-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/_0/24ww_t515n107_chnz3q71sx808llj/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sistum/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="user.home" value="/Users/sistum"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="sistum"/>
+    <property name="java.class.path" value="/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.2 test -Denvironment=prod"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_241"/>
+    <property name="java.ext.dirs" value="/Users/sistum/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="environment" value="prod"/>
+    <property name="maven.home" value="/Users/sistum/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/202.7319.50/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_json.json" time="0.181">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_json.json   &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:13&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                       &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2017-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2017-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mjson&amp;#27;[0m                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                             &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual json output sent by the service with expected json output file present in expected-content directory &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc/test/expected-content/dr_d1_ev_json.json&amp;#27;[0m&amp;#27;[36m&quot;.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json" time="0.007">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json   &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:14&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                       &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mjson&amp;#27;[0m                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                             &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual json output sent by the service with expected json output file present in expected-content directory &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc/test/expected-content/dr_d1_sc_json.json&amp;#27;[0m&amp;#27;[36m&quot;.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_json.json" time="0.008">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_json.json   &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:15&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                       &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mjson&amp;#27;[0m                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                             &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual json output sent by the service with expected json output file present in expected-content directory &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc/test/expected-content/pr_p1_sc_json.json&amp;#27;[0m&amp;#27;[36m&quot;.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_json.json" time="0.017">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_json.json   &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:16&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                       &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mjson&amp;#27;[0m                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                             &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual json output sent by the service with expected json output file present in expected-content directory &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc/test/expected-content/pr_p1_ev_json.json&amp;#27;[0m&amp;#27;[36m&quot;.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_json.json" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_json.json   &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:17&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                       &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mS000000002&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msd&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mjson&amp;#27;[0m                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                             &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual json output sent by the service with expected json output file present in expected-content directory &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc/test/expected-content/pr_p1_sd_json.json&amp;#27;[0m&amp;#27;[36m&quot;.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_csv.csv" time="0.005">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_csv.csv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:27&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/dr_d1_ev_csv.csv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_csv.csv" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_csv.csv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:28&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/dr_d1_sc_csv.csv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_csv.csv" time="0.005">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_csv.csv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:29&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_sc_csv.csv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_csv.csv" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_csv.csv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:30&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_ev_csv.csv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_csv.csv" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_csv.csv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:31&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mS000000002&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msd&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_sd_csv.csv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_tsv.tsv" time="0.008">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_tsv.tsv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:41&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2017-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2017-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mtsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/dr_d1_ev_tsv.tsv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_tsv.tsv" time="0.005">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_tsv.tsv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:42&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mtsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mdr_d1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/dr_d1_sc_tsv.tsv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_tsv.tsv" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_tsv.tsv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:43&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msc&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mtsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_sc_tsv.tsv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_tsv.tsv" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_tsv.tsv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:44&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mC000036298&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mev&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mtsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_ev_tsv.tsv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_tsv.tsv" time="0.005">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+</error>
+    <system-out>
+@integration-tests
+Scenario Outline: Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_tsv.tsv &amp;#27;[90m# src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:45&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI select the environment on which the execution is to be processed&amp;#27;[0m                                                                                                   &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI submit a get request with the required request parameters such as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mS000000002&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcounter&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-01-01&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2016-12-31&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msd&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mtsv&amp;#27;[0m                                                &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI provide the service url &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mpr_p1&amp;#27;[0m&amp;#27;[36m and wait until response is 200&amp;#27;[0m                                                                                                         &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;src/test/expected-content/pr_p1_sd_tsv.tsv&quot;&amp;#27;[0m&amp;#27;[36m.&amp;#27;[0m &amp;#27;[90m# com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+</testsuite>

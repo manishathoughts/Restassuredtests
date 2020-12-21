@@ -2,6 +2,7 @@ package com.elsevier.usage.apitests.stepdefinitions;
 
 import com.elsevier.usage.apitests.exception.UnexpectedStatusCodeException;
 import com.elsevier.usage.apitests.utils.CounterDataServiceUtils;
+import com.elsevier.usage.apitests.utils.CsvAndTsvReaderUtils;
 import com.elsevier.usage.apitests.utils.JsonReaderUtils;
 import com.elsevier.usage.apitests.utils.PropertyResolver;
 import io.cucumber.java.en.And;
@@ -10,12 +11,16 @@ import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONException;
+import org.junit.Assert;
 import org.skyscreamer.jsonassert.Customization;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.skyscreamer.jsonassert.comparator.CustomComparator;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
@@ -65,21 +70,37 @@ public class ReportDefinition {
         return response.getStatusCode() == expectedCode;
     }
 
-    @Then("I compare the actual output sent by service with expected output file present in expected-content directory {string}.")
-    public void compareJsonFiles(String path) {
-        try {
-            JSONAssert.assertEquals(JsonReaderUtils.readJson(path), responseMap.get("response").asString(),
-                    new CustomComparator(JSONCompareMode.LENIENT,
-                            new Customization("Report_Header.Created", (o1, o2) -> true)));
-            System.out.println("Expected content is matching with Actual content");
-        } catch (Exception e) {
+    @Then("^I compare the actual json output sent by the service with expected json output file present in expected-content directory \"([^\"]*)\".$")
+    public void iCompareJsonFiles(String path) throws IOException, JSONException {
 
-            System.out.println("*****************************" + e.fillInStackTrace());
-
-        }
-
-
+        JSONAssert.assertEquals(JsonReaderUtils.readJson(path), responseMap.get("response").asString(),
+                new CustomComparator(JSONCompareMode.LENIENT,
+                        new Customization("Report_Header.Created", (o1, o2) -> true)));
+        System.out.println("Expected content is matching with Actual content");
     }
 
 
+    @Then("I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory {string}.")
+    public void iCompareCSVFiles(String path) throws IOException {
+        CsvAndTsvReaderUtils.csvAndTsvReader(responseMap.get("response").asString(), CsvAndTsvReaderUtils.CSV_DELIMITER,path);
+        System.out.println("-------------------------------------------------------------*******************************");
+        assertResponses(CsvAndTsvReaderUtils.CSV_DELIMITER, path);
+        System.out.println("Expected content is matching with Actual content");
+    }
+
+    private void assertResponses(String delimiter, String path) throws IOException {
+        Map<Integer, List<String>> actual = CsvAndTsvReaderUtils.csvAndTsvReader(responseMap.get("response").asString(), delimiter,path);
+        Map<Integer, List<String>> expected = CsvAndTsvReaderUtils.csvAndTsvReader(null, delimiter,path);
+        expected.keySet().forEach((rowNo) -> {
+            Assert.assertEquals(expected.get(rowNo), actual.get(rowNo));
+        });
+    }
+
+    @Then("I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory {string}.")
+    public void iCompareTSVFiles(String path) throws IOException {
+        CsvAndTsvReaderUtils.csvAndTsvReader(responseMap.get("response").asString(), CsvAndTsvReaderUtils.TSV_DELIMITER,path);
+        System.out.println("-------------------------------------------------------------*******************************");
+        assertResponses(CsvAndTsvReaderUtils.TSV_DELIMITER, path);
+        System.out.println("Expected content is matching with Actual content");
+    }
 }

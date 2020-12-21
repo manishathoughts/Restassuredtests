@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class PropertyResolver {
     public static final String ENV_PROP_NAME = "environment";
-    public static final String ENV_NONPROD = "nonprod";
+    public static final String ENV_NONPROD = "prod";
     private static final String environment;
     static {
         String env = System.getenv(ENV_PROP_NAME);

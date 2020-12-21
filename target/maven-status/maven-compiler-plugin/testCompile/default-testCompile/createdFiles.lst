@@ -1,0 +1,8 @@
+com/elsevier/usage/apitests/utils/CounterDataServiceUtils.class
+com/elsevier/usage/apitests/utils/JsonReaderUtils.class
+com/elsevier/usage/apitests/utils/PropertyResolver.class
+com/elsevier/usage/apitests/utils/CsvAndTsvReaderUtils.class
+com/elsevier/usage/apitests/exception/UnexpectedStatusCodeException.class
+com/elsevier/usage/apitests/stepdefinitions/ReportDefinition.class
+com/elsevier/usage/apitests/cucumberoptions/TestRunner.class
+com/elsevier/usage/apitests/getreportapitests/GetDRD1ReportTest.class

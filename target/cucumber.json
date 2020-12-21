@@ -1,0 +1,1640 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "duration": 9000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.119Z",
+        "line": 13,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2017-01-01,2017-12-31,ev and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2017-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2017-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I compare the actual json output sent by the service with expected json output file present in expected-content directory \"src/test/expected-content/dr_d1_ev_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/expected-content/dr_d1_ev_json.json",
+                  "offset": 123
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.208Z",
+        "line": 14,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I compare the actual json output sent by the service with expected json output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/expected-content/dr_d1_sc_json.json",
+                  "offset": 123
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.216Z",
+        "line": 15,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I compare the actual json output sent by the service with expected json output file present in expected-content directory \"src/test/expected-content/pr_p1_sc_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/expected-content/pr_p1_sc_json.json",
+                  "offset": 123
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.223Z",
+        "line": 16,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I compare the actual json output sent by the service with expected json output file present in expected-content directory \"src/test/expected-content/pr_p1_ev_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/expected-content/pr_p1_ev_json.json",
+                  "offset": 123
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.239Z",
+        "line": 17,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_json.json",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S000000002",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sd",
+                  "offset": 109
+                },
+                {
+                  "val": "json",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I compare the actual json output sent by the service with expected json output file present in expected-content directory \"src/test/expected-content/pr_p1_sd_json.json\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/expected-content/pr_p1_sd_json.json",
+                  "offset": 123
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareJsonFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.243Z",
+        "line": 27,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_csv.csv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and csv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "csv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory \"src/test/expected-content/dr_d1_ev_csv.csv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_ev_csv.csv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.248Z",
+        "line": 28,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_csv.csv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and csv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "csv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_csv.csv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_sc_csv.csv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.253Z",
+        "line": 29,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_csv.csv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and csv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "csv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory \"src/test/expected-content/pr_p1_sc_csv.csv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_sc_csv.csv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.257Z",
+        "line": 30,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_csv.csv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and csv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "csv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory \"src/test/expected-content/pr_p1_ev_csv.csv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_ev_csv.csv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.262Z",
+        "line": 31,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_csv.csv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and csv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S000000002",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sd",
+                  "offset": 109
+                },
+                {
+                  "val": "csv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory \"src/test/expected-content/pr_p1_sd_csv.csv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_sd_csv.csv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareCSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.266Z",
+        "line": 41,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_tsv.tsv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2017-01-01,2017-12-31,ev and tsv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2017-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2017-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "tsv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory \"src/test/expected-content/dr_d1_ev_tsv.tsv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_ev_tsv.tsv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.274Z",
+        "line": 42,
+        "name": "Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_tsv.tsv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and tsv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "tsv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I provide the service url dr_d1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dr_d1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory \"src/test/expected-content/dr_d1_sc_tsv.tsv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/dr_d1_sc_tsv.tsv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.279Z",
+        "line": 43,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_tsv.tsv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and tsv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sc",
+                  "offset": 109
+                },
+                {
+                  "val": "tsv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory \"src/test/expected-content/pr_p1_sc_tsv.tsv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_sc_tsv.tsv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.284Z",
+        "line": 44,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_tsv.tsv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and tsv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C000036298",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "ev",
+                  "offset": 109
+                },
+                {
+                  "val": "tsv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory \"src/test/expected-content/pr_p1_ev_tsv.tsv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_ev_tsv.tsv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)\n\tat ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I select the environment on which the execution is to be processed",
+            "match": {
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T11:34:17.289Z",
+        "line": 45,
+        "name": "Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_tsv.tsv",
+        "description": "",
+        "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.;submitting-get-request-for-\u003creport-id\u003e-json-formatted-end-point-and-validating-expected-output-data-is-matching-with-actual-data-for-a-scenario:\u003cscenarioname\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and tsv",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S000000002",
+                  "offset": 68
+                },
+                {
+                  "val": "counter",
+                  "offset": 79
+                },
+                {
+                  "val": "2016-01-01",
+                  "offset": 87
+                },
+                {
+                  "val": "2016-12-31",
+                  "offset": 98
+                },
+                {
+                  "val": "sd",
+                  "offset": 109
+                },
+                {
+                  "val": "tsv",
+                  "offset": 116
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.submitRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I provide the service url pr_p1 and wait until response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pr_p1",
+                  "offset": 26
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.serviceURLandLimit(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory \"src/test/expected-content/pr_p1_sd_tsv.tsv\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/expected-content/pr_p1_sd_tsv.tsv\"",
+                  "offset": 120
+                }
+              ],
+              "location": "com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.iCompareTSVFiles(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@integration-tests"
+          }
+        ]
+      }
+    ],
+    "name": "Perform functional testing around the actual contents of the reports that the service generates.",
+    "description": "",
+    "id": "perform-functional-testing-around-the-actual-contents-of-the-reports-that-the-service-generates.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature",
+    "tags": []
+  }
+]

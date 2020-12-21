@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="15" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="0.304">
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_json.json" time="0.078">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2017-01-01,2017-12-31,ev and json.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual json output sent by the service with expected json output file present in expected-content directory "src/test/expected-content/dr_d1_ev_json.json"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_json.json" time="0.004">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and json.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual json output sent by the service with expected json output file present in expected-content directory "src/test/expected-content/dr_d1_sc_json.json"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_json.json" time="0.004">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and json.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual json output sent by the service with expected json output file present in expected-content directory "src/test/expected-content/pr_p1_sc_json.json"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_json.json" time="0.013">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and json.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual json output sent by the service with expected json output file present in expected-content directory "src/test/expected-content/pr_p1_ev_json.json"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_json.json" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and json.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual json output sent by the service with expected json output file present in expected-content directory "src/test/expected-content/pr_p1_sd_json.json"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_csv.csv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and csv.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory "src/test/expected-content/dr_d1_ev_csv.csv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_csv.csv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and csv.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory "src/test/expected-content/dr_d1_sc_csv.csv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_csv.csv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and csv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory "src/test/expected-content/pr_p1_sc_csv.csv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_csv.csv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and csv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory "src/test/expected-content/pr_p1_ev_csv.csv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_csv.csv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and csv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual CSV output sent by the service with expected CSV output file present in expected-content directory "src/test/expected-content/pr_p1_sd_csv.csv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_ev_tsv.tsv" time="0.006">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2017-01-01,2017-12-31,ev and tsv.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory "src/test/expected-content/dr_d1_ev_tsv.tsv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for dr_d1 json formatted end point and validating expected output data is matching with actual data for a scenario:dr_d1_sc_tsv.tsv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and tsv.skipped
+And I provide the service url dr_d1 and wait until response is 200..........skipped
+Then I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory "src/test/expected-content/dr_d1_sc_tsv.tsv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sc_tsv.tsv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,sc and tsv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory "src/test/expected-content/pr_p1_sc_tsv.tsv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_ev_tsv.tsv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as C000036298,counter,2016-01-01,2016-12-31,ev and tsv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory "src/test/expected-content/pr_p1_ev_tsv.tsv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Perform functional testing around the actual contents of the reports that the service generates." name="Submitting get request for pr_p1 json formatted end point and validating expected output data is matching with actual data for a scenario:pr_p1_sd_tsv.tsv" time="0.002">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I select the environment on which the execution is to be processed....failed
+And I submit a get request with the required request parameters such as S000000002,counter,2016-01-01,2016-12-31,sd and tsv.skipped
+And I provide the service url pr_p1 and wait until response is 200..........skipped
+Then I compare the actual TSV output sent by the service with expected TSV output file present in expected-content directory "src/test/expected-content/pr_p1_sd_tsv.tsv"..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.elsevier.usage.apitests.stepdefinitions.ReportDefinition.selectEnvironment(ReportDefinition.java:39)
+	at ✽.I select the environment on which the execution is to be processed(file:///Users/sistum/usage-projects/restassuredpractice/src/test/java/com/elsevier/usage/apitests/features/dr_d1andpr_p1Report.feature:4)
+]]></failure>
+</testcase>
+</testsuite>
