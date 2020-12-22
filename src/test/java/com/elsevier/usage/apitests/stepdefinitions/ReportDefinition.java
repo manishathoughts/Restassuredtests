@@ -89,10 +89,11 @@ public class ReportDefinition {
     }
 
     private void assertResponses(String delimiter, String path) throws IOException {
-        Map<Integer, List<String>> actual = CsvAndTsvReaderUtils.csvAndTsvReader(responseMap.get("response").asString(), delimiter,path);
-        Map<Integer, List<String>> expected = CsvAndTsvReaderUtils.csvAndTsvReader(null, delimiter,path);
-        expected.keySet().forEach((rowNo) -> {
-            Assert.assertEquals(expected.get(rowNo), actual.get(rowNo));
+        List<List<String>> actual = CsvAndTsvReaderUtils.csvAndTsvReader(responseMap.get("response").asString(), delimiter,path);
+        List<List<String>> expected = CsvAndTsvReaderUtils.csvAndTsvReader(null, delimiter,path);
+
+        expected.forEach((expRow) -> {
+            Assert.assertTrue("Expected row: "+expRow+" is not present in actual resopnse.",actual.contains(expRow));
         });
     }
 
